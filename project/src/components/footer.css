@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    color: #fff;
+    min-height: 100px;
+    position: relative;
+    bottom: 0;
+    background: #21262c;
+    padding: 20px 0; /* Space above the inner divs */
+}
+
+.footer .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out items evenly */
+    align-items: stretch; /* Ensure all inner divs are the same height */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer .first, 
+.footer .second, 
+.footer .third {
+    width: 100%; /* Default to full width on small screens */
+    max-width: 300px; /* Maximum width for larger screens */
+    margin: 10px; /* Add margin for spacing between columns */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .footer .first, 
+    .footer .second, 
+    .footer .third {
+        width: calc(33.33% - 20px); /* Set to one-third width minus margins */
+    }
+}
