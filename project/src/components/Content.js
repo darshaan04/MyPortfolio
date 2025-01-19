@@ -41,7 +41,7 @@ const Content = () => {
     }
     else
     {
-      const res = await fetch("http://localhost:6002/register", {
+      const res = await fetch("https://myportfolio-backend-6pfb.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
